@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>POSTOBON</title>
+        <link rel="stylesheet" href="./Style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="https://seeklogo.com/images/P/postobon-logo-31569E7991-seeklogo.com.png" alt="Logo">
+            <h2>Estado financiero POSTOBON</h2>
+            <h2>Servicio al cliente</h2>
+        </header>
+
+        <main>
+            <div class="container">
+                <!-- Este div contiene el titulo con la alineacion de las 2  (2023 / 2024) -->
+                <div class="barra">
+                    <div class="titulo">
+                        <h3>Estado financiero</h3>
+                    </div>
+                    <div>
+                        <h2 class="año">2023</h2>
+                    </div>
+                    <div>
+                        <h2 class="año">2024</h2>
+                    </div>
+                </div>
+                <div class="totalactivosTitulo">
+                    <p>Activos corrientes</p>
+                </div>
+                
+                <!-- Esta primera seccion contiene todos los enunciados e inputs a calcular en esta seccion -->
+                <!-- Explicacion los inputs (ids): en la primera seccion van: la primera fila (1_1 a 1_3 -> Seria "resultado1") y en la segunda fila (1_4 a 1_6 -> Seria "resultado2") -->
+                <!-- Lo mismo en la segunda seccion van en la primera fila (2_1 a 2_5 -> Seria "resultado3") y en la segunda fila (2_6 a 2_10 -> Seria "resultado4") -->
+                <section>
+                    <div class="barra">
+                        <div class="titulo">
+                            <label for="">Efectivo y equivalente</label>
+                        </div>
+                        <input type="number" id="input1_1" required>
+                        <input type="number" id="input1_4" required>
+                    </div>
+
+                    <div class="barra">
+                        <div class="titulo">
+                            <label for="">Cuentas corrientes</label>
+                        </div>
+                        <input type="number" id="input1_2" required>
+                        <input type="number" id="input1_5" required>
+                    </div>
+
+                    <div class="barra">
+                        <div class="titulo">
+                            <label for="">Inventarios</label>
+                        </div>
+                        <input type="number" id="input1_3" required>
+                        <input type="number" id="input1_6" required>
+                    </div>
+                </section>
+
+                <!-- Primer enunciado de total con sus dos resultados -->
+                <div class="totalactivos">
+                    <div class="titulo">
+                        <h3>Total activos corrientes</h3>
+                    </div>
+                        <h2 class="anchoResultado" id="resultado1">-</h2>
+                        <h2 class="anchoResultado" id="resultado2">-</h2>
+                </div>
+                
+                <div class="totalactivosTitulo"">
+                        <p>Activos no corrientes</p>
+                </div> 
+
+                <!-- Esta es la segunda seccion que contiene todos los enunciados e inputs a calcular en este segundo apartado -->
+                <seccion>
+                    <div class="barra">
+                        <div class="titulo">
+                            <label for="">Inversiones en asociadas y negocios conjuntos</label>
+                        </div>
+                        <input type="number" id="input2_1" required>
+                        <input type="number" id="input2_6" required>
+                    </div>
+
+                    <div class="barra">
+                        <div class="titulo">
+                            <label for="">Cuentas corrientes y comerciales</label>
+                        </div>
+                        <input type="number" id="input2_2" required>
+                        <input type="number" id="input2_7" required>
+                    </div>
+
+                    <div class="barra">
+                        <div class="titulo">
+                            <label for="">Propiedad, planta y equipo neto</label>
+                        </div>
+                        <input type="number" id="input2_3" required>
+                        <input type="number" id="input2_8" required>
+                    </div>
+                        
+                    <div class="barra">
+                        <div class="titulo">
+                            <label for="">Propiedades de inversion</label>
+                        </div>
+                        <input type="number" id="input2_4" required>
+                        <input type="number" id="input2_9" required>
+                    </div>
+
+                    <div class="barra">
+                        <div class="titulo">
+                            <label for="">Intangibles</label>
+                        </div>
+                        <input type="number" id="input2_5" required>
+                        <input type="number" id="input2_10" required>
+                    </div>
+                </seccion>
+
+                <!-- Segundo enunciado de total con sus dos resultados -->
+                <div class="totalactivos">
+                    <div class="titulo">
+                        <h3>Total activos no corrientes</h3>
+                    </div>
+                        <h2 class="anchoResultado" id="resultado3">-</h2>
+                        <h2 class="anchoResultado" id="resultado4">-</h2>
+                </div>
+
+                <button type="button" id="botonCalcular">Calcular Activos</button>
+
+                <!-- Por ultimo tenemos el enunciado del total global y sus dos resultados-->
+                <div class="totalactivos">
+                    <div class="titulo">
+                        <h3>Total activos</h3>
+                    </div>
+                    <h2 class="anchoResultado" id="resultado5">-</h2>
+                    <h2 class="anchoResultado" id="resultado6">-</h2>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

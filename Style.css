@@ -1,0 +1,87 @@
+/*Estilos generales de la pagina*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+}
+
+/*Header y .logo el encabezado de la pagina*/
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #0b2c7a;
+    color: white;
+    height: 100px;
+}
+
+.logo {
+    height: 90px;
+}
+
+
+.container {
+    background-color: white;
+    padding: 20px;
+    margin: 50px auto;
+    width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 150px;
+    box-sizing: border-box;
+}
+
+/* Estilos para las filas del estado financiero */
+.barra {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+/* Establece los estilos solo para la etiqueta que contiene "Activos corrientes" y "Activos no corrientes" */
+.totalactivosTitulo p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* El div que contiene las 3 filas de resultados */
+.totalactivos {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* El div que contiene todos los enunciados de los inputs y el titulo de la */
+.titulo {
+    width: 250px;
+}
+
+/* Establece el ancho del espacio en donde irán los resultados */
+.anchoResultado{
+    width: 150px;
+}
+
+/* Estilos del boton para calcular */
+button {
+    padding: 10px 20px;
+    background-color: #F71301;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
